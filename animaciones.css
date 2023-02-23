@@ -1,0 +1,92 @@
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top: 65px;
+}
+
+.items li {
+    position: relative;
+    padding: 0;
+}
+
+.items li a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.70s ease;
+}
+
+.items li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+
+#hero{
+    animation: slide-top 1.7s ease-in-out;
+}
+
+.produtcards {
+    transition: all 0.3s linear;
+}
+.produtcards img:hover {
+    transform: scale(1.048);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .portada a{
+    transition: all 0.2s ease-in;
+    color:#000000;
+    background: #d8e1d6;
+    border: none;
+    transform: scale(1.1);
+  }
+
+  .portada a:hover{
+    transition: all 0.2s ease-in;
+    color: #000000;
+    background: #0cec80;
+    border: none;
+    transform: scale(1.3);
+  }
+  .add:hover {
+    transition: all 0.2s ease-in;
+    color: #ffffff;
+    background: #749685;
+    border: none;
+    transform: scale(1.1);
+}
+.add:hover {
+    transition: all 0.2s ease-in;
+    color: #000000;
+    background: #0cec80;
+    border: none;
+    transform: scale(1.3);
+}
+
+.botonformu{
+    transition: all 0.2s ease-in;
+    transform: scale(1.1);
+}
+
+.botonformu:hover{
+    transition: all 0.2s ease-in;
+    color: #000000;
+    background: #0cec80;
+    border: none;
+    transform: scale(1.2);
+}
+  @keyframes slide-top {
+    from {
+      transform: translateY(-370px);
+    }
+    to {
+      transform: translateY(0);
+    }
+}
+
