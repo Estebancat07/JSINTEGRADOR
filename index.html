@@ -12,44 +12,61 @@
     <title>PROTEINBOSS</title>
 </head>
 <body>
-   <header>
-    <nav class="navbar">
-        <label for="menu-toggle" class="menu-label">
-            <i class="fa-sharp fa-solid fa-bars"></i></label>
-        <input type="checkbox" id="menu-toggle">
-    
-        <ul class="items">
-
-            <li><a href="#hero">INICIO</a></li>
-            <li><a href="#categorias">PRODUCTOS FITNESS</a></li>
-            <li><a href="#nosotros">NOSOTROS</a></li>
-            <li><a href="#contacto">CONTACTANOS</a></li>
-          
-
-        </ul> 
-
-        <div class="logo">
-            <img src="./assets/img/logofinal4.png"  alt="">
-
-        </div>
-    </nav>
-
-        <nav class="icons">
-
-            <label for="carttoggle" class="cartlabel"></label>
-            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-            <input type="checkbox" id="carttoggle">
-
-            <i class="fa-sharp fa-solid fa-user"></i>
-            
-
-        </nav>
+    <header>
+        <img src="./assets/img/logofinal4.png" alt="Logo de protein" class="logo" />
+        <nav class="navbar">
+            <div class="menu-label">
+                <img src="./assets/img/menu.png" alt="" class="menu-icon" />
         
-  
-   </header>
+              </div>
+        
+        
+        
+              <ul class="navbar-list">
+                <li><a class="navbar-link" href="#hero">INICIO</a></li>
+                <li><a class="navbar-link" href="#nosotros">NOSOTROS</a></li>
+                <li><a class="navbar-link" href="#categorias">PRODUCTOS ENERGY</a></li>
+                <li><a class="navbar-link" href="#contacto">CONTACTO</a></li>
+                <li><a class="navbar-link" href="./login.html">LOGIN</a></li>
+        
+        
+                
+                
+              </ul>
+        
+              <div class="cart-label">
+        
+                <i class="fa-solid fa-cart-shopping cart-icon">
+                  <div class="cart-bubble">0</div>
+                </i>
+              </div>
+        
+        
+              <div class="cart">
+        
+                <h2>TUS PRODUCTOS ENERGY ⚡ </h2>
+        
+        
+                <div class="cart-container">
+        
+                </div>
+        
+                <span class="divider"></span>
+        
+                <div class="cart-total">
+                  <p>TOTAL:</p>
+                  <span class="total"></span>
+                </div>
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-delete">Vaciar carrito</button>
+              </div>
+        
+              <div class="overlay"></div>
+            </nav>
+      </header>
 
    <main>
-    <section id="hero">
+   <section id="hero">
      <div class="portada">
 
         <h1>ENERGY BOSS </h1>
@@ -112,124 +129,18 @@
     <h2>PRODUCTOS ENERGY ⚡</h2> 
  <span class="bar-category"></span>
 
-    <div class="category">
-        <button class="btncategory-active">TODOS</button>
-        <button class="btncategory">POLVO</button>
-        <button class="btncategory">CAPSULAS</button>
-        <button class="btncategory">COMPRIMIDOS</button>
-        <button class="btncategory">LIQUIDOS</button>
+    <div class="categories">
+        <button class="category active">TODOS</button>
+        <button class="category" data-category="polvo">POLVO</button>
+        <button class="category"data-category=capsulas>CAPSULAS</button>
+        <button class="category"data-category=comprimidos>COMPRIMIDOS</button>
+        <button class="category"data-category=liquidos>LIQUIDOS</button>
     </div>
 
-    <div class="categorycontainer">
-
-
-    <div class="produtcards">
-        <img src="./assets/img/polvo1.png" alt="">
-        
-            <h3>ENA Sport True sabor strawberry milkshake.</h3>
-            <span>$6.790</span>
-            <button class="add">Comprar</button>
-        </div>
-    
-
-    <div class="produtcards">
-        <img src="./assets/img/polvo2.png" alt="">
-       
-            <h3>ENA Sport Creatina Micronizada neutro.</h3>
-            <span>$9.200</span>
-            <button class="add">Comprar</button>
-        
+    <div class="products-container">
+   
     </div>
-
-    <div class="produtcards">
-        <img src="./assets/img/polvo3.png" alt="">
-        
-            <h3>ENA Sport Whey X-Pro sabor vanilla.</h3>
-            <span>$7.990</span>
-            <button class="add">Comprar</button>
-        
-    </div>
-
-    <div class="produtcards">
-        <img src="./assets/img/cap1.png" alt="">
-        
-            <h3>Ripped X Ena Quemador De Grasas.</h3>
-            <span>$1.790</span>
-            <button class="add">Comprar</button>
-        
-    </div>
-
-    <div class="produtcards">
-        <img src="./assets/img/cap2.png" alt="">
-        
-            <h3>Zma Gold Nutrition Zinc.</h3>
-            <span>$2.270</span>
-            <button class="add">Comprar</button>
-       
-    </div>
-
-    <div class="produtcards">
-        <img src="./assets/img/cap3.png" alt="">
-       
-            <h3>NA Sport Carnitina 1500 Mg.</h3>
-            <span>$2280</span>
-            <button class="add">Comprar</button>
-       
-    </div>
-
-    <div class="produtcards">
-        <img src="./assets/img/comp1.png" alt="">
-        
-            <h3>Quelat Zinc Forte X 30.</h3>
-            <span>$1799</span>
-            <button class="add">Comprar</button>
-        
-    </div>
-
-    <div class="produtcards">
-        <img src="./assets/img/comp2.png" alt="">
-        
-            <h3>Satial Carb Controller.</h3>
-            <span>$3750</span>
-            <button class="add">Comprar</button>
-        
-    </div>
-
-    <div class="produtcards">
-        <img src="./assets/img/comp3.png" alt="">
-        
-            <h3>Uridon Max X 30 - Ext Arandanos.</h3>
-            <span>$3570</span>
-            <button class="add">Comprar</button>
-        
-    </div>
-
-    <div class="produtcards">
-        <img src="./assets/img/liq1.png" alt="">
-        
-            <h3>Goodskin sabor frutal 375mL.</h3>
-            <span>$7400</span>
-            <button class="add">Comprar</button>
-        
-    </div>
-
-    <div class="produtcards">
-        <img src="./assets/img/liq2.png" alt="">
-        
-            <h3>Aceite Esencial De Orégano 30 Ml.</h3>
-            <span>$3500</span>
-            <button class="add">Comprar</button>
-        
-    </div>
-
-    <div class="produtcards">
-        <img src="./assets/img/liq3.png" alt="">
-
-            <h3>Aloe Vera- Natier X 250 Cm3.</h3>
-            <span>$1000</span>
-            <button class="add">Comprar</button>
-    </div>
-    </div>
+    <button class="btnload1">Ver Más</button>
     
 </section>
 
@@ -362,5 +273,8 @@
 
     
 </footer>
+<div class="add-modal"></div>
+<script src="./data.js"></script>
+<script src="./index.js"></script>
 </body>
 </html>

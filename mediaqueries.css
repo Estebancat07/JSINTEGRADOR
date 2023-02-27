@@ -1,0 +1,153 @@
+@media (max-width: 1200px) {
+    .banner1 img {
+        width: 900px;
+        padding-left: 240px;
+    }
+    .formu {
+        width: 350px;
+    }
+    #hero {
+        background-repeat: no-repeat;
+    }
+    .navbar {
+        gap: 5px;
+      }
+     
+}
+@media (max-width: 1015px) {
+    .caja {
+        width: 300px;
+    }
+    .caja p {
+        font-size: 15px;
+    }
+    .caja1 {
+        flex-direction: column;
+    }
+    .banner1 {
+        display: none;
+    }
+}
+@media (max-width: 855px) {
+
+    .navbar-list{
+        position: absolute;
+        top: 99px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 2px solid #ffffff;
+        border-top: 0px;
+        border-radius: 0px 0px 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+      }
+      .navbar-list a {
+       font-size: 18px;
+       color: #ffffff;
+     }
+
+     .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+      }
+
+.open-menu {
+        display: flex;
+      }
+
+    .portada h1 {
+        font-size: 40px;
+    }
+    .portada span {
+        font-size: 20px;
+    }
+    .portada {
+        width: 350px;
+    }
+
+    
+    
+      .bars {
+        height: 20px;
+        width: 25px;
+      }
+    
+      
+    
+}
+@media (max-width: 699px) {
+    .formu {
+        display: none;
+    }
+    #hero {
+        display: none;
+    }
+    .btncategory, .btncategory-active {
+        font-size: 10px;
+    }
+    #categorias h2 {
+        font-size: 20px;
+    }
+    .explore, .terminos {
+        display: none;
+    }
+    
+}
+@media (max-width: 500px) {
+    .banner {
+        width: 430px;
+        height: 400px;
+    }
+    .bannertitle p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 440px) {
+    .banner {
+        width: 330px;
+        height: 300px;
+    }
+    .category {
+        gap: 8px;
+    }
+    .icons {
+        gap: 0px;
+        width: 10px;
+    }
+}
+@media (max-width: 360px) {
+    .btncategory, .btncategory-active {
+        font-size: 8px;
+    }
+    header {
+        padding: 0px;
+    }
+    .cards {
+        width: 280px;
+        height: 380px;
+    }
+    .logo {
+        padding-left: 25px;
+    }
+    .banner {
+        width: 230px;
+        height: 200px;
+    }
+    .bannertitle p {
+        font-size: 10px;
+    }
+    .bannertitle img {
+        width: 50px;
+        height: 50px;
+    }
+    .icons {
+        gap: 0px;
+    }
+}

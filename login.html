@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="animaciones.css">
+    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.html">
+</head>
+<body>
+    <header>
+        <img src="./assets/img/logofinal4.png" alt="Logo de protein" class="logo" />
+        <nav class="navbar">
+            <div class="menu-label">
+                <img src="./assets/img/menu.png" alt="" class="menu-icon" />
+        
+              </div>
+        
+        
+        
+              <ul class="navbar-list">
+                <li><a class="navbar-link" href="./index.html">INICIO</a></li>
+
+  
+              </ul>
+        
+        
+            </nav>
+      </header>
+
+<main>
+    <section id="log"> 
+   
+        <div class="form-box">
+        <div class="button-box">
+            <div id="elegir"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesion</button>
+            <button type="button" class="toggle-btn" onclick="registrar()">Registrarse </button>
+
+        </div>
+
+    <div class="redes-sociales">
+       <img src="./assets/img/fb.png" alt="">
+       <img src="./assets/img/Diseño sin título (2).png" alt="">
+
+    </div>
+    <form id="login" class="input-group">
+        <div class="form_field">
+        <input type="text" class="input-field" id="usuario" placeholder="Nombre de Usuario" >
+        <small></small>
+        </div>
+        <div class="form_field">
+        <input type="password" class= "input-field" id="contraseña" placeholder="Contraseña ">
+        <small></small>
+        </div> 
+
+       <a class="ok-account">¿Aún no tienes una cuenta?</a>
+        <input type="submit" class="botonsubmit" value="Acceder" />
+    </form>
+   
+    
+    <form id="registrar" class="input-group">
+        <div class="form__field">
+        <input type="text" class="input-field" id="username" placeholder="Nombre de Usuario">
+        <small></small>
+        </div>
+
+        <div class="form__field">
+        <input type="email" class="input-field" id="email" placeholder="Correo" >
+        <small></small>
+        </div>
+
+        <div class="form__field">
+        <input type="password" class= "input-field" id="password" placeholder="Contraseña ">
+        <small></small>
+        </div>
+
+        <a class="no-account">¿Ya tienes una cuenta?</a>
+        <input type="submit" class="submit-btn" value="Acceder" />
+        
+        
+    </form>
+    </div>
+
+<script src="./main.js"></script>
+       
+    <script>
+      var x = document.getElementById("login")
+      var y = document.getElementById("registrar")
+      var z = document.getElementById("elegir")
+
+    function login(){
+    x.style.left="50px"
+    y.style.left="450px"
+    z.style.left="10px"
+    }
+    function registrar(){
+    x.style.left="-400px"
+    y.style.left="50px"
+    z.style.left="140px"
+    }
+    </script>
+
+</section>
+
+</main>
+       <footer>
+        <img src="./assets/img/logotype.png" alt="logoeb">
+        <div class="footerlink" >
+    
+            <ul class="explore">
+    
+                <h4>Explore</h4>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#drinkwe">Productos Fitness</a></li>
+                <li><a href="#categories-section">Contacto</a></li>
+    
+            </ul>
+    
+            <ul class="redes">
+    
+                <h4>Redes</h4>
+    
+                <div class="cajaredes">
+    
+                <div class="fotoredes">
+                    
+                   <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/ig.png" alt="logoig"></a>
+            
+                </div>
+    
+                <div class="fotoredes">
+                    <a href="https://es-la.facebook.com/" target="_blank"><img src="./assets/img/fb.png" alt="logofb" ></a >
+                
+                </div>
+    
+               </div>
+            </ul>
+          
+            <ul class="terminos">
+                <h4>Legal</h4>
+                <li><a href="#">Terminos y condiciones</a></li>
+                <li><a href="#">Privacidad</a></li>
+            </ul>
+    
+        </div>
+    
+        
+    </footer>
+</body>
+</html>

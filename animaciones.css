@@ -3,12 +3,12 @@ html{
     scroll-padding-top: 65px;
 }
 
-.items li {
+.navbar-list li {
     position: relative;
     padding: 0;
 }
 
-.items li a::after {
+.navbar-list a::after {
     content: "";
     height: 2px;
     width: 100%;
@@ -21,7 +21,7 @@ html{
     transition: transform 0.70s ease;
 }
 
-.items li a:hover::after {
+.navbar-list a:hover::after {
     transform-origin: bottom left;
     transform: scaleX(1);
 }
@@ -31,19 +31,16 @@ html{
     animation: slide-top 1.7s ease-in-out;
 }
 
-.produtcards {
+.products-cards {
     transition: all 0.3s linear;
 }
-.produtcards img:hover {
+.products-cards img:hover {
     transform: scale(1.048);
     transition: all 0.5s ease-in-out;
   }
 
   .portada a{
     transition: all 0.2s ease-in;
-    color:#000000;
-    background: #d8e1d6;
-    border: none;
     transform: scale(1.1);
   }
 
@@ -54,19 +51,16 @@ html{
     border: none;
     transform: scale(1.3);
   }
-  .add:hover {
+  .btn-add:hover {
     transition: all 0.2s ease-in;
-    color: #ffffff;
-    background: #749685;
-    border: none;
     transform: scale(1.1);
 }
-.add:hover {
-    transition: all 0.2s ease-in;
+.btn-add:hover:hover {
+    transition: all 0.4s ease-in;
     color: #000000;
-    background: #0cec80;
+    background: #04f374;
     border: none;
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 
 .botonformu{
@@ -81,7 +75,40 @@ html{
     border: none;
     transform: scale(1.2);
 }
-  @keyframes slide-top {
+
+.disabled {
+  background-color: rgb(245, 60, 60);
+  color: white;
+  cursor: not-allowed;
+  border: none;
+}
+.disabled:hover {
+  background-color: var(--text-gray);
+  color: white;
+  cursor: not-allowed;
+  border: none;
+}
+ 
+
+.overlay {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1; 
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
+}
+
+.show-overlay {
+  display: block;
+}
+
+ @keyframes slide-top {
     from {
       transform: translateY(-370px);
     }
@@ -89,4 +116,3 @@ html{
       transform: translateY(0);
     }
 }
-
