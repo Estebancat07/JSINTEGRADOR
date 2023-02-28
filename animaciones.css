@@ -26,6 +26,29 @@ html{
     transform: scaleX(1);
 }
 
+.navbar_list a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.70s ease;
+}
+
+.navbar_list a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.navbar_list li {
+  position: relative;
+  padding: 0;
+}
+
 
 #hero{
     animation: slide-top 1.7s ease-in-out;
@@ -58,7 +81,7 @@ html{
 .btn-add:hover:hover {
     transition: all 0.4s ease-in;
     color: #000000;
-    background: #04f374;
+    background: #24dd87;
     border: none;
     transform: scale(1.2);
 }
@@ -77,13 +100,11 @@ html{
 }
 
 .disabled {
-  background-color: rgb(245, 60, 60);
-  color: white;
-  cursor: not-allowed;
-  border: none;
+  transition: all 0.2s ease-in;
+  transform: scale(1.1);
 }
 .disabled:hover {
-  background-color: var(--text-gray);
+  background-color: rgb(238, 7, 7);
   color: white;
   cursor: not-allowed;
   border: none;

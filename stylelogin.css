@@ -14,6 +14,7 @@ main {
     height: 100vh;
   }
 
+
   #log{
         max-width: 1200px;
         display: flex;
@@ -26,8 +27,8 @@ main {
       }
   
 .form-box{
-    width: 370px;
-    height: 455px;
+    width: 355px;
+    height: 450px;
     position: relative;
     margin: 6% auto;
     background-color: #efebeb;
