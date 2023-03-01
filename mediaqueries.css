@@ -110,7 +110,6 @@
     }
 
     
-    
       .bars {
         height: 20px;
         width: 25px;
@@ -139,6 +138,10 @@
     #nosotros{
         padding:110px 0px 0px
     }
+
+    .navbar-linka{
+        display: none;
+    }
     
 }
 @media (max-width: 500px) {
@@ -159,7 +162,7 @@
         gap: 8px;
     }
     .cart {
-        width: 100vw;
+        width: 100%;
 
       }
     
@@ -221,5 +224,8 @@
     gap: 9px;
 }
 
-
+.form-box{
+    width: 300px;
+    height: 300px;
+}
 }

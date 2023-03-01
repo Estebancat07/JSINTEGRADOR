@@ -1,0 +1,75 @@
+@media (max-width: 500px){
+    .form-box{
+        
+        width: 390px;
+        height: 550px;
+        
+    }
+    .input-group style{
+    left: 10px;
+
+    }
+
+    .footerlink{
+        gap: 40px;
+    }
+}
+
+@media (max-width: 400px){
+    .form-box{
+        
+        width: 330px;
+        height: 550px;
+      
+    }
+    .input-group style{
+    left: 10px;
+
+    }
+
+    .footerlink{
+        gap: 10px;
+    }
+
+    
+.input-field{
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+   
+}
+}
+
+@media (max-width: 340px){
+    .terminos{
+        display: none;
+    }
+
+    .footerlink{
+        gap: 40px;
+    }
+
+    .form-box{
+        
+        width: 310px;
+        height: 550px;
+      
+    }
+
+    .input-group small{
+        font-size: 10px;
+    }
+
+
+    .botonsubmit{
+        width: 100px;
+    }
+
+    .submit-btn{
+        width: 120px;
+    }
+
+    .footerlink{
+        width: 160px;
+    }
+}
