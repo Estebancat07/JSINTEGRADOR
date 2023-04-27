@@ -183,7 +183,7 @@ border-radius: 50px;
     left: 450px;
 }
 
-/* Error / Success */
+/* Error- Aprobado */
 .form__field.error input {
     border: 1px solid #dc3545;
   }
@@ -199,7 +199,6 @@ border-radius: 50px;
     border: 1px solid #28a745;
   }
 
- /* ----------------------------------------*/
   .form_field.error input {
     border: 1px solid #dc3545;
   }

@@ -67,6 +67,12 @@
 
 @media (max-width: 855px) {
 
+    #hero{
+        background-size: cover;
+        background-position:center; 
+        height: 90vh;
+    }
+
     .navbar-list{
         position: absolute;
         top: 99px;
@@ -154,6 +160,11 @@
     }
 }
 @media (max-width: 440px) {
+
+    .cards{
+        width: 280px;
+
+    }
     .banner {
         width: 330px;
         height: 300px;
@@ -165,9 +176,29 @@
         width: 100%;
 
       }
-    
+
+    .btn-buy, .btn-delete {
+        width: 280px;
+    } 
+
+    .cart h2{
+        font-size: 18px;
+          }
 }
+
+@media (max-width: 400px){
+
+    .btn-buy, .btn-delete {
+        width: 280px;
+    } 
+
+    .cart h2{
+        font-size: 18px;
+          }
+}
+
 @media (max-width: 340px) {
+
     .btncategory, .btncategory-active {
         font-size: 8px;
     }
@@ -204,8 +235,12 @@
    }
 
    .cart {
-    padding: 25px 80px;
+    padding:60px;
   
+  }
+
+  .cart h2{
+font-size: 16px;
   }
 .cart-item {
     width: 305px;
@@ -213,11 +248,11 @@
     padding: 10px;
 }
     .divider {
-    width: 120%;
+    width: 100%;
 }
 .btn-buy, .btn-delete {
-    width: 300px;
-    margin-left: 50px;
+    width: 250px;
+   
 
 } 
 .item-handler {
@@ -228,4 +263,40 @@
     width: 300px;
     height: 300px;
 }
+
+}
+
+@media (max-width: 320px) {
+
+
+    .cards{
+        width: 250px;
+        height: 340px;
+
+    }
+
+    .cards h2,p{
+        font-size: 13px;
+    }
+    .cart {
+        padding:60px 80px;
+     width: 100vw;
+        
+      }
+
+
+      .btn-buy, .btn-delete {
+        width: 200px;
+    } 
+
+    .empty-msg{
+        font-size: 13px;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      .cart h2{
+        font-size: 14px;
+          }
+   
 }

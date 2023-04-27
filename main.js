@@ -157,7 +157,7 @@ form.addEventListener("submit", (e) => {
 
 /*---------VALIDACION LOGIN---------*/
 
-
+const form3 = document.getElementById ("formu")
 const form2 = document.getElementById ("login")
 const inputname = document.getElementById("usuario");
 const inputpass = document.getElementById("contraseña");
